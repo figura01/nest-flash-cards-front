@@ -13,4 +13,8 @@ export class FlashcardListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  saveAnswer(answer: any) {
+    console.log('answer', answer);
+  }
+
 }
