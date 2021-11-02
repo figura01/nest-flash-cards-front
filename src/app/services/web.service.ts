@@ -33,4 +33,7 @@ export class WebService {
     console.log('this.answers: ', this.answers)
   }
 
+  get allCardsAnswered() {
+    return this.answers.length === this.cards.length;
+  }
 }
