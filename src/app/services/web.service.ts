@@ -26,4 +26,11 @@ export class WebService {
   getCards() {
     return this.http.get<Card[]>(`${this.BASE_URL}/cards`);
   }
+
+  saveAnswer(answer: any) {
+    // @ts-ignore
+    this.answers = [...this.answers, answer];
+    console.log('this.answers: ', this.answers)
+  }
+
 }
