@@ -14,7 +14,8 @@ export class FlashcardListComponent implements OnInit {
   }
 
   saveAnswer(answer: any) {
-    console.log('answer', answer);
+    //console.log('answer', answer);
+    this.web.saveAnswer(answer);
   }
 
 }
