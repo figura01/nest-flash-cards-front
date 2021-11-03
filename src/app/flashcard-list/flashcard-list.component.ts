@@ -18,4 +18,12 @@ export class FlashcardListComponent implements OnInit {
     this.web.saveAnswer(answer);
   }
 
+  saveAll() {
+    this.web.saveAllAnswersToServer().subscribe(data => {
+      console.log('saveAllAnswersTosServer SUCCESS', data);
+    }, err => {
+      console.log('saveAllAnswersTosServer FAILURE', err);
+    })
+  }
+
 }
